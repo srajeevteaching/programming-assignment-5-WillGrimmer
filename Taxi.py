@@ -81,11 +81,6 @@ def tripsinrange(o,s):
     lon1=float(input("input longitude"))
     name=input("what would you like to name the file?")
     output=[]
-    yoski=[["Mando", "Mandalorian", "Bounty Hunter", 35],
-        ["Grogu", "Mandalorian", "Jedi Master", 50],
-        ["Eleven", "Stranger Things", "Kid", 14],
-        ["Jon", "Game of Thrones", "King", 30],
-        ["Ross", "Friends", "Paleontologist", 35]]
     name=name+'.csv'
     for i in s:
         if (m.acos(m.sin(lat1) * m.sin(float(i[8])) + m.cos(lat1) * m.cos(float(i[8])) * m.cos(lon1 - float(i[9]))) * 3959) <= dist:
